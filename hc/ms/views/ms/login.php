@@ -25,11 +25,11 @@
 			                    <form role="form" action="" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Username</label>
-			                        	<input type="text" name="form-username" placeholder="用户名" class="form-username form-control" id="form-username">
+			                        	<input type="text" name="form-username" placeholder="用户名" class="form-username form-control" id="form-username" required="required">
 			                        </div>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input type="password" name="form-password" placeholder="密码" class="form-password form-control" id="form-password">
+			                        	<input type="password" name="form-password" placeholder="密码" class="form-password form-control" id="form-password" required="required">
 			                        </div>
 			                        <button type="submit" class="btn">登陆</button>
 			                    </form>
