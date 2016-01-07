@@ -48,7 +48,7 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'www.lytc.club';
-$db['default']['username'] = 'roor';
+$db['default']['username'] = 'root';
 $db['default']['password'] = '';
 $db['default']['database'] = 'hc';
 $db['default']['dbdriver'] = 'mysqli';
