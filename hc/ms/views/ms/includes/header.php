@@ -12,19 +12,25 @@
 
 	<title></title>
    
-	<link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
-   
-	<script src="<?php echo base_url('assets/redactor/redactor.js') ?>"></script>
+	<link href="<?php echo base_url('assets/framework/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url('assets/framework/bootstrap/css/bootstrap-theme.min.css') ?>" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url('assets/framework/fileupload/css/style.css') ?>" rel="stylesheet" type="text/css">
+	<link href="<?php echo base_url('assets/framework/fileupload/css/jquery.fileupload.css') ?>" rel="stylesheet" type="text/css">
 	
-	
-	
-                <script src="/roadshow/images/js/fileupload/js/vendor/jquery.ui.widget.js" type="text/javascript"></script>
-                <script src="/roadshow/images/js/load-image.all.min.js" type="text/javascript"></script>
-                <script src="/roadshow/images/js/canvas-to-blob.min.js" type="text/javascript"></script>
-                <script src="/roadshow/images/js/fileupload/js/jquery.iframe-transport.js" type="text/javascript"></script>
-                <script src="/roadshow/images/js/fileupload/js/jquery.fileupload.js" type="text/javascript"></script>
-                <script src="/roadshow/images/js/fileupload/js/jquery.fileupload-process.js" type="text/javascript"></script>
-                <script src="/roadshow/images/js/fileupload/js/jquery.fileupload-image.js" type="text/javascript"></script>
+	<script src="<?php echo base_url('assets/js/jquery-1.11.3.min.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/showdialog.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/main.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/load-image.all.min.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/canvas-to-blob.min.js') ?>"></script>
+	<script src="<?php echo base_url('assets/framework/fileupload/js/vendor/jquery.ui.widget.js') ?>"></script>
+	<script src="<?php echo base_url('assets/framework/fileupload/js/jquery.iframe-transport.js') ?>"></script>
+	<script src="<?php echo base_url('assets/framework/fileupload/js/jquery.fileupload.js') ?>"></script>
+	<script src="<?php echo base_url('assets/framework/fileupload/js/jquery.fileupload-process.js') ?>"></script>
+	<script src="<?php echo base_url('assets/framework/fileupload/js/jquery.fileupload-image.js') ?>"></script>
+	<script src="<?php echo base_url('assets/framework/bootstrap/js/bootstrap.min.js') ?>"></script>
+	<script src="<?php echo base_url('assets/framework/ueditor/ueditor.load.js') ?>"></script>
+	<script src="<?php echo base_url('assets/framework/ueditor/ueditor.all.js') ?>"></script>
+	<script src="<?php echo base_url('assets/js/showdialog.js') ?>"></script>
 	
 </head>
 	<body>
