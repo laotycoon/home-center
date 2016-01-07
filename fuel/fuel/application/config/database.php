@@ -47,10 +47,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
+$db['default']['hostname'] = 'www.lytc.club';
+$db['default']['username'] = 'roor';
 $db['default']['password'] = '';
-$db['default']['database'] = '';
+$db['default']['database'] = 'hc';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = FALSE;
@@ -62,6 +62,7 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+$db['default']['port'] = 306;
 
 // used for testing purposes
 if (defined('TESTING'))
