@@ -23,7 +23,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+if ( ! empty($_SERVER['HTTPS']))
+{
+	$config['base_url'] = 'https://localhost/hc';
+}
+else
+{
+	$config['base_url'] = 'http://localhost/hc';
+}
+//$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------

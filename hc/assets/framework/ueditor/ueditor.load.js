@@ -1,1 +1,1 @@
-window.UEDITOR_HOME_URL = "/rsms/images/js/ueditor/";
+window.UEDITOR_HOME_URL = "assets/framework/ueditor/";

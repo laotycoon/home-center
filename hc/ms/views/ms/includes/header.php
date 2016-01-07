@@ -11,7 +11,8 @@
 	<meta name="author" content="">
 
 	<title></title>
-   
+	
+	<?php echo base_url();?>assets/framework/bootstrap/css/bootstrap.min.css
 	<link href="<?php echo base_url('assets/framework/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css">
 	<link href="<?php echo base_url('assets/framework/bootstrap/css/bootstrap-theme.min.css') ?>" rel="stylesheet" type="text/css">
 	<link href="<?php echo base_url('assets/framework/fileupload/css/style.css') ?>" rel="stylesheet" type="text/css">
