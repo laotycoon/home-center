@@ -1,0 +1,1 @@
+window.UEDITOR_HOME_URL = "/rsms/images/js/ueditor/";
