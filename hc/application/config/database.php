@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'www.lytc.club',
+	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
-	'database' => 'hc',
+	'database' => '',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -92,6 +92,5 @@ $db['default'] = array(
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
-	'save_queries' => TRUE,
-	'port' => 306
+	'save_queries' => TRUE
 );
