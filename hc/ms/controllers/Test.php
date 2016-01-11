@@ -10,6 +10,6 @@ class Test extends CI_Controller {
     {
     	$this->load->model('test_model');
     	$data['test'] = $this->test_model->get_test();
-    	$this->load->view('testview',$data);
+    	//$this->load->view('testview',$data);
     }
 }

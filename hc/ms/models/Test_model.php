@@ -13,7 +13,7 @@ class Test_model extends CI_Model {
 	
 	public function get_test()
 	{
-		$query = $this->db->query('SELECT * FROM fuel_users');
+		$query = $this->db->query('SELECT * FROM USER_LOGIN');
 		return $query->result();
 	}
 
