@@ -3,7 +3,6 @@ class Login_model extends CI_Model {
 
 	public function __construct()
 	{
-		// Call the CI_Model constructor
 		parent::__construct();
 	}
 
@@ -13,10 +12,21 @@ class Login_model extends CI_Model {
 
 	public function get_login($userLogin)
 	{
+		$result =array('result'=>'','msg'=>'');
 		$username = $userLogin['username'];
 		$password = $userLogin['password'];
-		$sql = "SELECT * FROM USER_LOGIN where user_login_id= ? ";
+		$sql = "SELECT * FROM USER_LOGIN where user_login_id= ?";
 		$query = $this->db->query($sql, $username);
-		return $query->num_rows();
+		if($query->num_rows()>0){
+			$result['result']="success";
+		}else{
+			$result['result']="error";
+			$result['msg']="用户名不存在。";
+		}
+		$fields=array("user_login_id"=>$username);
+		$row=$this->delegator->findByAnd('USER_LOGIN',$fields,null);
+		//$this->genericvalue->create();
+		return $row;
 	}
 }
+
