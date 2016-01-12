@@ -24,4 +24,20 @@ class Delegator {
 		$row = $query->first_row('array');
 		return $row;
 	}
+	
+	public function findList($entityName,$entityCondition,$fieldsToSelect,$orderBy,$findOptions,$useCache) {
+		$sql = "SELECT * FROM ".$entityName." where 1=1 ";
+		$where="";
+		foreach ($entityCondition as $key => $value){
+			$where=$where." and ".$key."='".$value."' ";
+		}
+		if(!empty($where))
+			$sql=$sql.$where;
+		if(!empty($orderBy))
+			$sql=$sql." order by ".$orderBy;
+		$query = $this->CI->db->query($sql);
+		return $query;
+	}
+	
+	
 }

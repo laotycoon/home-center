@@ -25,7 +25,6 @@ class Login_model extends CI_Model {
 		}
 		$fields=array("user_login_id"=>$username);
 		$row=$this->delegator->findByAnd('USER_LOGIN',$fields,null);
-		//$this->genericvalue->create();
 		return $row;
 	}
 }
