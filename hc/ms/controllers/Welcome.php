@@ -18,10 +18,29 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function _remap($method, $params = array())
+	{
+		//$method = 'process_'.$method;
+		if (method_exists($this, $method))
+		{
+			return call_user_func_array(array($this, $method), $params);
+		}
+		show_404();
+	}
+	
 	public function index()
 	{
+		$this->load->library('session');
+		print_r($_SESSION);
 		$this->load->view('/ms/includes/header');
-		$this->load->view('/ms/login');
+		if(!empty($_SESSION['userLogin']))
+		{
+			$userLogin = $_SESSION['userLogin'];
+			$this->load->view('/ms/navbar');
+		}
+		else{
+			$this->load->view('/ms/login');
+		}
 		$this->load->view('/ms/includes/footer');
 	}
 }

@@ -21,15 +21,15 @@
                         			<i class="fa fa-lock"></i>
                         		</div>
                             </div>
-                            <div class="form-bottom">
-			                    <form role="form" action="index.php/userLogin/login" method="post" class="login-form">
+                            <div class="form-bottom"><!-- index.php/userLogin/login -->
+			                    <form role="form" action="" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Username</label>
-			                        	<input type="text" name="username" placeholder="用户名" class="form-username form-control" id="form-username" required="required">
+			                        	<input type="text" name="USERNAME" placeholder="用户名" class="form-username form-control" id="form-username" required="required">
 			                        </div>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input type="password" name="password" placeholder="密码" class="form-password form-control" id="form-password" required="required">
+			                        	<input type="password" name="PASSWORD" placeholder="密码" class="form-password form-control" id="form-password" required="required">
 			                        </div>
 			                        <button type="submit" class="btn">登陆</button>
 			                    </form>
