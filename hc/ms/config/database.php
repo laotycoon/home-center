@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'www.lytc.club',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => 'db.lytc.club',
+	'username' => 'ofbiz',
+	'password' => 'ofbiz',
 	'database' => 'hc',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
