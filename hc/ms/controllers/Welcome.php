@@ -31,7 +31,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->library('session');
-		print_r($_SESSION);
+		//print_r($_SESSION);
 		$this->load->view('/ms/includes/header');
 		if(!empty($_SESSION['userLogin']))
 		{

@@ -22,7 +22,7 @@
                         		</div>
                             </div>
                             <div class="form-bottom"><!-- index.php/userLogin/login -->
-			                    <form role="form" action="" method="post" class="login-form">
+			                    <form role="form" action="index.php/userLogin/login" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Username</label>
 			                        	<input type="text" name="USERNAME" placeholder="用户名" class="form-username form-control" id="form-username" required="required">
@@ -33,6 +33,9 @@
 			                        </div>
 			                        <button type="submit" class="btn">登陆</button>
 			                    </form>
+		                    </div>
+		                    <div class="form-message">
+		                    	<p><?php if(!empty($_SESSION['_ERROR_MESSAGE_']))echo $_SESSION['_ERROR_MESSAGE_'];?></p>
 		                    </div>
                         </div>
                     </div>

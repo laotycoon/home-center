@@ -14,9 +14,10 @@
 	
 	<link href="<?php echo base_url('assets/framework/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css">
 	<link href="<?php echo base_url('assets/framework/bootstrap/css/bootstrap-theme.min.css') ?>" rel="stylesheet" type="text/css">
+<!-- 	
 	<link href="<?php echo base_url('assets/framework/fileupload/css/style.css') ?>" rel="stylesheet" type="text/css">
 	<link href="<?php echo base_url('assets/framework/fileupload/css/jquery.fileupload.css') ?>" rel="stylesheet" type="text/css">
-	
+ -->
 	<link rel="stylesheet" href="<?php echo base_url('assets/font-awesome/css/font-awesome.min.css') ?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/css/form-elements.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/style.css') ?>">
@@ -27,6 +28,8 @@
     <link rel="apple-touch-icon-precomposed" href="<?php echo base_url('assets/ico/apple-touch-icon-57-precomposed.png') ?>">
 	    
 	<script src="<?php echo base_url('assets/js/jquery-1.12.0.min.js') ?>"></script>
+	<script src="<?php echo base_url('assets/framework/bootstrap/js/bootstrap.min.js') ?>"></script>
+<!-- 
 	<script src="<?php echo base_url('assets/js/showdialog.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/load-image.all.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/canvas-to-blob.min.js') ?>"></script>
@@ -35,12 +38,13 @@
 	<script src="<?php echo base_url('assets/framework/fileupload/js/jquery.fileupload.js') ?>"></script>
 	<script src="<?php echo base_url('assets/framework/fileupload/js/jquery.fileupload-process.js') ?>"></script>
 	<script src="<?php echo base_url('assets/framework/fileupload/js/jquery.fileupload-image.js') ?>"></script>
-	<script src="<?php echo base_url('assets/framework/bootstrap/js/bootstrap.min.js') ?>"></script>
 	<script src="<?php echo base_url('assets/framework/ueditor/ueditor.load.js') ?>"></script>
 	<script src="<?php echo base_url('assets/framework/ueditor/ueditor.all.js') ?>"></script>
+ -->
 	<script src="<?php echo base_url('assets/js/showdialog.js') ?>"></script>
 	<script src="<?php echo base_url('assets/js/jquery.backstretch.min.js') ?>"></script>
     <script src="<?php echo base_url('assets/js/scripts.js') ?>"></script>
+
     
 </head>
 	<body>

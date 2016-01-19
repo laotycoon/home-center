@@ -1,6 +1,6 @@
 var $btnlogin = $('.btn');
 $(function(){
-    alert(2);
+    /*
 	$btnlogin.on('click',function(event) {
 	    event.preventDefault();
         var bol=false;
@@ -28,4 +28,5 @@ $(function(){
             alert(m._LOGIN_PASSED_);
         }
 	});
+	*/
 });
