@@ -3,6 +3,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->library('/common/CurlWorker');
+	}
+	
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,7 +26,12 @@ class Welcome extends CI_Controller {
 	 */
 	public function _remap($method, $params = array())
 	{
-		//$method = 'process_'.$method;
+		$url = "http://localhost:8080/sso/control/checkLogin";
+		$output=$this->curlworker->curl_request_to_json($url,'','',0);
+		$status=$output['LoginStatus'];
+		if ($status=='error') {
+			$method='loginview';
+		}
 		if (method_exists($this, $method))
 		{
 			return call_user_func_array(array($this, $method), $params);
@@ -28,23 +39,15 @@ class Welcome extends CI_Controller {
 		show_404();
 	}
 	
-	public function __construct()
-	{
-		parent::__construct();
-		$this->load->library('/common/CurlWorker');
-	}
-	
 	public function index()
 	{
-		$url = "http://localhost:8080/sso/control/checkLogin";
-		$output=$this->curlworker->curl_request_to_json($url,'','',0);
-		$status=$output['LoginStatus'];
-		if ($status=='error') {
-			$this->load->view('/includes/header');
-			$this->load->view('login');
-			$this->load->view('/includes/footer');
-		}else{
-			header("location:/hc/index.php/controller/main");
-		}
+		header("location:/hc/index.php/controller/main");
+	}
+	
+	public function loginview()
+	{
+		$this->load->view('/includes/header');
+		$this->load->view('login');
+		$this->load->view('/includes/footer');
 	}
 }
