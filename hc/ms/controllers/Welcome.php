@@ -32,15 +32,15 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->library('session');
 		//print_r($_SESSION);
-		$this->load->view('/ms/includes/header');
+		$this->load->view('/includes/header');
 		if(!empty($_SESSION['userLogin']))
 		{
 			$userLogin = $_SESSION['userLogin'];
-			$this->load->view('/ms/navbar');
+			$this->load->view('/includes/navbar');
 		}
 		else{
-			$this->load->view('/ms/login');
+			$this->load->view('login');
 		}
-		$this->load->view('/ms/includes/footer');
+		$this->load->view('/includes/footer');
 	}
 }
