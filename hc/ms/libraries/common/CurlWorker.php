@@ -43,6 +43,10 @@ class CurlWorker {
 			return $data;
 		}
 	}
-	
+	function curl_request_to_json($url,$post='',$cookie='', $returnCookie=0){
+		$output = $this->curl_request($url,$post,$cookie, $returnCookie);
+		$output_array = json_decode($output,true);
+		return $output_array;
+	}
 	
 }

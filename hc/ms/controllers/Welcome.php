@@ -28,19 +28,23 @@ class Welcome extends CI_Controller {
 		show_404();
 	}
 	
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->library('/common/CurlWorker');
+	}
+	
 	public function index()
 	{
-		$this->load->library('session');
-		//print_r($_SESSION);
-		$this->load->view('/includes/header');
-		if(!empty($_SESSION['userLogin']))
-		{
-			$userLogin = $_SESSION['userLogin'];
-			$this->load->view('/includes/navbar');
-		}
-		else{
+		$url = "http://localhost:8080/sso/control/checkLogin";
+		$output=$this->curlworker->curl_request_to_json($url,'','',0);
+		$status=$output['LoginStatus'];
+		if ($status=='error') {
+			$this->load->view('/includes/header');
 			$this->load->view('login');
+			$this->load->view('/includes/footer');
+		}else{
+			header("location:/hc/index.php/controller/main");
 		}
-		$this->load->view('/includes/footer');
 	}
 }

@@ -4,7 +4,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text col-xs-4">
-                            <h1><strong>Home-Center</strong></h1>
+                            <h1><strong>标题</strong></h1>
                             <div class="description">
                             	<p>Welcome！</p>
                             </div>
