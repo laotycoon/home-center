@@ -58,7 +58,12 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database','entity/Delegator','entity/GenericValue');
+$autoload['libraries'] = array(
+		'database',
+		'entity/Delegator',
+		'/entity/GenericValue',
+		'/common/CurlWorker'
+	);
 
 /*
 | -------------------------------------------------------------------

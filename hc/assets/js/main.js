@@ -7,7 +7,7 @@ $(function(){
         var m;
 	    $.ajax({
 			type:'post',
-			url:'https://localhost:8443/sso/control/login',
+			url:'https://localhost:8443/sso/control/ssoLogin',
 			data:$('.login-form').serialize(),
 			dataType:'json',
 			async:false,

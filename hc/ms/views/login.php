@@ -1,3 +1,6 @@
+<script src="<?php echo base_url('assets/js/jquery.backstretch.min.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/scripts.js') ?>"></script>
+
 		<!-- Top content -->
         <div class="top-content">
             <div class="inner-bg">
@@ -21,7 +24,7 @@
                         			<i class="fa fa-lock"></i>
                         		</div>
                             </div>
-                            <div class="form-bottom"><!-- index.php/userLogin/login -->
+                            <div class="form-bottom"><!-- index.php/controller/login -->
 			                    <form role="form" action="index.php/controller/login" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Username</label>

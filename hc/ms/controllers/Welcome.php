@@ -6,7 +6,6 @@ class Welcome extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->library('/common/CurlWorker');
 	}
 	
 	/**
@@ -26,12 +25,14 @@ class Welcome extends CI_Controller {
 	 */
 	public function _remap($method, $params = array())
 	{
-		$url = "http://localhost:8080/sso/control/checkLogin";
-		$output=$this->curlworker->curl_request_to_json($url,'','',0);
+		$url = "http://localhost:8080/sso/control/ssoCheckLogin";
+		$output=$this->curlworker->curl_request_to_json($url,'',true,0);
 		$status=$output['LoginStatus'];
-		if ($status=='error') {
+		echo $status;
+		if ($status!='success') {
 			$method='loginview';
 		}
+		
 		if (method_exists($this, $method))
 		{
 			return call_user_func_array(array($this, $method), $params);
